@@ -1,0 +1,129 @@
+@server=http://localhost:4004
+@username=alice
+@password=
+
+
+### Books
+# @name Books_GET
+GET {{server}}/odata/v4/admin/Books
+Authorization: Basic {{username}}:{{password}}
+
+
+### Books
+# @name Books_POST
+POST {{server}}/odata/v4/admin/Books
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": 31013761,
+  "title": "title-31013761",
+  "descr": "descr-31013761",
+  "author": {
+    "ID": 8458072
+  },
+  "genre": {
+    "ID": 13656381
+  },
+  "stock": 81,
+  "price": 6836611.26,
+  "currency": {
+    "code": "379"
+  },
+  "createdAt": "2013-05-06T03:00:00.000Z",
+  "createdBy": "createdBy.igqdd@example.com",
+  "modifiedAt": "2014-11-18T03:00:00.000Z",
+  "modifiedBy": "modifiedBy.igqdd@example.net"
+}
+
+
+### Books
+# @name Books_PATCH
+PATCH {{server}}/odata/v4/admin/Books/31013761
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": 31013761,
+  "title": "title-31013761",
+  "descr": "descr-31013761",
+  "author": {
+    "ID": 8458072
+  },
+  "genre": {
+    "ID": 13656381
+  },
+  "stock": 81,
+  "price": 6836611.26,
+  "currency": {
+    "code": "379"
+  },
+  "createdAt": "2013-05-06T03:00:00.000Z",
+  "createdBy": "createdBy.igqdd@example.com",
+  "modifiedAt": "2014-11-18T03:00:00.000Z",
+  "modifiedBy": "modifiedBy.igqdd@example.net"
+}
+
+
+### Books
+# @name Books_DELETE
+DELETE {{server}}/odata/v4/admin/Books/31013761
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### Authors
+# @name Authors_GET
+GET {{server}}/odata/v4/admin/Authors
+Authorization: Basic {{username}}:{{password}}
+
+
+### Authors
+# @name Authors_POST
+POST {{server}}/odata/v4/admin/Authors
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": 8458072,
+  "name": "name-8458072",
+  "createdAt": "2020-11-17T03:00:00.000Z",
+  "createdBy": "createdBy.51aag@example.org",
+  "modifiedAt": "2005-05-15T03:00:00.000Z",
+  "modifiedBy": "modifiedBy.51aag@example.org"
+}
+
+
+### Authors
+# @name Authors_PATCH
+PATCH {{server}}/odata/v4/admin/Authors/8458072
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": 8458072,
+  "name": "name-8458072",
+  "createdAt": "2020-11-17T03:00:00.000Z",
+  "createdBy": "createdBy.51aag@example.org",
+  "modifiedAt": "2005-05-15T03:00:00.000Z",
+  "modifiedBy": "modifiedBy.51aag@example.org"
+}
+
+
+### Authors
+# @name Authors_DELETE
+DELETE {{server}}/odata/v4/admin/Authors/8458072
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### Genres
+# @name Genres_GET
+GET {{server}}/odata/v4/admin/Genres
+Authorization: Basic {{username}}:{{password}}
+
+
+### Currencies
+# @name Currencies_GET
+GET {{server}}/odata/v4/admin/Currencies
+Authorization: Basic {{username}}:{{password}}
