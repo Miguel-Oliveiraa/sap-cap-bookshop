@@ -5,29 +5,119 @@
 
 ### Books
 # @name Books_GET
-GET {{server}}/browse/Books
+GET {{server}}/cat/Books
 Authorization: Basic {{username}}:{{password}}
 
 
-### Genres
-# @name Genres_GET
-GET {{server}}/browse/Genres
+### Books
+# @name Books_POST
+POST {{server}}/cat/Books
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "95905276-229f-44d4-b624-896bb7032c70",
+  "title": "title-9590527",
+  "writer": "writer-9590527",
+  "publCountry": "publCountry-9590527",
+  "isHardcover": false,
+  "amount": 42.18,
+  "currency": {
+    "code": "469"
+  },
+  "stock": 70,
+  "author": {
+    "ID": "3901413d-6402-453d-b80e-172eb8c92a7a"
+  }
+}
+
+
+### Books
+# @name Books_PATCH
+PATCH {{server}}/cat/Books/95905276-229f-44d4-b624-896bb7032c70
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "95905276-229f-44d4-b624-896bb7032c70",
+  "title": "title-9590527",
+  "writer": "writer-9590527",
+  "publCountry": "publCountry-9590527",
+  "isHardcover": false,
+  "amount": 42.18,
+  "currency": {
+    "code": "469"
+  },
+  "stock": 70,
+  "author": {
+    "ID": "3901413d-6402-453d-b80e-172eb8c92a7a"
+  }
+}
+
+
+### Books
+# @name Books_DELETE
+DELETE {{server}}/cat/Books/95905276-229f-44d4-b624-896bb7032c70
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### Authors
+# @name Authors_GET
+GET {{server}}/cat/Authors
+Authorization: Basic {{username}}:{{password}}
+
+
+### Authors
+# @name Authors_POST
+POST {{server}}/cat/Authors
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "3901413d-6402-453d-b80e-172eb8c92a7a",
+  "name": "name-3901413",
+  "dateOfBirth": "2012-07-17",
+  "dateOfDeath": "2014-02-20",
+  "epoch": {
+    "ID": 22761532
+  },
+  "period": "period-3901413"
+}
+
+
+### Authors
+# @name Authors_PATCH
+PATCH {{server}}/cat/Authors/3901413d-6402-453d-b80e-172eb8c92a7a
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "3901413d-6402-453d-b80e-172eb8c92a7a",
+  "name": "name-3901413",
+  "dateOfBirth": "2012-07-17",
+  "dateOfDeath": "2014-02-20",
+  "epoch": {
+    "ID": 22761532
+  },
+  "period": "period-3901413"
+}
+
+
+### Authors
+# @name Authors_DELETE
+DELETE {{server}}/cat/Authors/3901413d-6402-453d-b80e-172eb8c92a7a
+Content-Type: application/json
 Authorization: Basic {{username}}:{{password}}
 
 
 ### Currencies
 # @name Currencies_GET
-GET {{server}}/browse/Currencies
+GET {{server}}/cat/Currencies
 Authorization: Basic {{username}}:{{password}}
 
 
-### submitOrder
-# @name submitOrder_POST
-POST {{server}}/browse/submitOrder
-Content-Type: application/json
+### Epochs
+# @name Epochs_GET
+GET {{server}}/cat/Epochs
 Authorization: Basic {{username}}:{{password}}
-
-{
-  "book": 4195421,
-  "quantity": 32
-}

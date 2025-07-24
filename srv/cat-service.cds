@@ -1,10 +1,28 @@
-using { sap.capire.bookshop as my } from '../db/schema';
-service CatalogService @(path:'/browse') { 
+using com.sap.learning as db from '../db/schema';
 
-  @readonly entity Books as select from my.Books {*,
-    author.name as author
-  } excluding { createdBy, modifiedBy };
+service CatalogService @(path: '/cat') {
+    
+    entity Books as
+    projection on db.Books {
+        ID,
+        title,
+        author.name as writer,
+        publCountry.name as publCountry,
+        isHardcover,
+        price.amount,
+        price.currency,
+        stock,
+        author
+    };
 
-  @requires: 'authenticated-user'
-  action submitOrder (book: Books:ID, quantity: Integer);
+    entity Authors as projection on db.Authors {
+        *,
+        epoch.name as period
+    }
+    excluding {
+        createdAt,
+        createdBy,
+        modifiedAt,
+        modifiedBy
+    };
 }
