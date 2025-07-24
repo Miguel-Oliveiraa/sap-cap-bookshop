@@ -16,64 +16,64 @@ Content-Type: application/json
 Authorization: Basic {{username}}:{{password}}
 
 {
-  "ID": "12784023-0481-4231-8891-fd69ea389e6e",
-  "title": "title-12784023",
-  "genre": 2,
+  "ID": "82744791-d28e-4511-a519-4a2531bd1da0",
+  "title": "title-8274479",
+  "genre": 1,
   "publCountry": {
-    "code": "551"
+    "code": "712"
   },
-  "stock": 94,
+  "stock": 26,
   "price": {
-    "amount": 40.22,
+    "amount": 72.35,
     "currency": {
-      "code": "333"
+      "code": "292"
     }
   },
   "isHardcover": false,
   "author": {
-    "ID": "28409932-64b6-42c2-b4f6-cccdba6fbb75"
+    "ID": "23595437-dc4d-4895-ba76-c43f5fe18ac7"
   },
-  "createdAt": "2002-04-20T03:00:00.000Z",
-  "createdBy": "createdBy.7m07r@example.com",
-  "modifiedAt": "2017-06-29T03:00:00.000Z",
-  "modifiedBy": "modifiedBy.7m07r@example.net"
+  "createdAt": "2015-02-10T03:00:00.000Z",
+  "createdBy": "createdBy.4xcmn@example.net",
+  "modifiedAt": "2015-07-20T03:00:00.000Z",
+  "modifiedBy": "modifiedBy.4xcmn@example.net"
 }
 
 
 ### Books
 # @name Books_PATCH
-PATCH {{server}}/admin/Books/12784023-0481-4231-8891-fd69ea389e6e
+PATCH {{server}}/admin/Books/82744791-d28e-4511-a519-4a2531bd1da0
 Content-Type: application/json
 Authorization: Basic {{username}}:{{password}}
 
 {
-  "ID": "12784023-0481-4231-8891-fd69ea389e6e",
-  "title": "title-12784023",
-  "genre": 2,
+  "ID": "82744791-d28e-4511-a519-4a2531bd1da0",
+  "title": "title-8274479",
+  "genre": 1,
   "publCountry": {
-    "code": "551"
+    "code": "712"
   },
-  "stock": 94,
+  "stock": 26,
   "price": {
-    "amount": 40.22,
+    "amount": 72.35,
     "currency": {
-      "code": "333"
+      "code": "292"
     }
   },
   "isHardcover": false,
   "author": {
-    "ID": "28409932-64b6-42c2-b4f6-cccdba6fbb75"
+    "ID": "23595437-dc4d-4895-ba76-c43f5fe18ac7"
   },
-  "createdAt": "2002-04-20T03:00:00.000Z",
-  "createdBy": "createdBy.7m07r@example.com",
-  "modifiedAt": "2017-06-29T03:00:00.000Z",
-  "modifiedBy": "modifiedBy.7m07r@example.net"
+  "createdAt": "2015-02-10T03:00:00.000Z",
+  "createdBy": "createdBy.4xcmn@example.net",
+  "modifiedAt": "2015-07-20T03:00:00.000Z",
+  "modifiedBy": "modifiedBy.4xcmn@example.net"
 }
 
 
 ### Books
 # @name Books_DELETE
-DELETE {{server}}/admin/Books/12784023-0481-4231-8891-fd69ea389e6e
+DELETE {{server}}/admin/Books/82744791-d28e-4511-a519-4a2531bd1da0
 Content-Type: application/json
 Authorization: Basic {{username}}:{{password}}
 
@@ -91,43 +91,44 @@ Content-Type: application/json
 Authorization: Basic {{username}}:{{password}}
 
 {
-  "name": "name-28409932",
-  "dateOfBirth": "2015-12-04",
-  "dateOfDeath": "2013-08-01",
+  "ID": "23595437-dc4d-4895-ba76-c43f5fe18ac7",
+  "name": "name-23595437",
+  "dateOfBirth": "2012-05-16",
+  "dateOfDeath": "2010-01-29",
   "epoch": {
-    "ID": 9690176
+    "ID": 27254491
   },
-  "createdAt": "2005-10-01T03:00:00.000Z",
-  "createdBy": "createdBy.gwx8s@example.org",
-  "modifiedAt": "2022-08-04T03:00:00.000Z",
-  "modifiedBy": "modifiedBy.gwx8s@example.net"
+  "createdAt": "2001-06-02T03:00:00.000Z",
+  "createdBy": "createdBy.e1qct@example.com",
+  "modifiedAt": "2020-12-10T03:00:00.000Z",
+  "modifiedBy": "modifiedBy.e1qct@example.net"
 }
 
 
 ### Authors
 # @name Authors_PATCH
-PATCH {{server}}/admin/Authors/ae8ec880-5185-403e-a802-7078b2669154
+PATCH {{server}}/admin/Authors/23595437-dc4d-4895-ba76-c43f5fe18ac7
 Content-Type: application/json
 Authorization: Basic {{username}}:{{password}}
 
 {
-  "ID": "ae8ec880-5185-403e-a802-7078b2669154",
-  "name": "migas",
-  "dateOfBirth": "2015-12-04",
-  "dateOfDeath": "2011-08-01",
+  "ID": "23595437-dc4d-4895-ba76-c43f5fe18ac7",
+  "name": "name-23595437",
+  "dateOfBirth": "2012-05-16",
+  "dateOfDeath": "2010-01-29",
   "epoch": {
-    "ID": 9690176
+    "ID": 27254491
   },
-  "createdAt": "2005-10-01T03:00:00.000Z",
-  "createdBy": "createdBy.gwx8s@example.org",
-  "modifiedAt": "2022-08-04T03:00:00.000Z",
-  "modifiedBy": "modifiedBy.gwx8s@example.net"
+  "createdAt": "2001-06-02T03:00:00.000Z",
+  "createdBy": "createdBy.e1qct@example.com",
+  "modifiedAt": "2020-12-10T03:00:00.000Z",
+  "modifiedBy": "modifiedBy.e1qct@example.net"
 }
 
 
 ### Authors
 # @name Authors_DELETE
-DELETE {{server}}/admin/Authors/28409932-64b6-42c2-b4f6-cccdba6fbb75
+DELETE {{server}}/admin/Authors/23595437-dc4d-4895-ba76-c43f5fe18ac7
 Content-Type: application/json
 Authorization: Basic {{username}}:{{password}}
 

@@ -9,105 +9,9 @@ GET {{server}}/cat/Books
 Authorization: Basic {{username}}:{{password}}
 
 
-### Books
-# @name Books_POST
-POST {{server}}/cat/Books
-Content-Type: application/json
-Authorization: Basic {{username}}:{{password}}
-
-{
-  "ID": "16145390-2684-4fa4-9034-27e350c10e26",
-  "title": "title-16145390",
-  "writer": "writer-16145390",
-  "publCountry": "publCountry-16145390",
-  "isHardcover": true,
-  "amount": 95.93,
-  "currency": {
-    "code": "128"
-  },
-  "stock": 73,
-  "author": {
-    "ID": "81240089-15b0-4266-980e-192a4c7b2349"
-  }
-}
-
-
-### Books
-# @name Books_PATCH
-PATCH {{server}}/cat/Books/16145390-2684-4fa4-9034-27e350c10e26
-Content-Type: application/json
-Authorization: Basic {{username}}:{{password}}
-
-{
-  "ID": "16145390-2684-4fa4-9034-27e350c10e26",
-  "title": "title-16145390",
-  "writer": "writer-16145390",
-  "publCountry": "publCountry-16145390",
-  "isHardcover": true,
-  "amount": 95.93,
-  "currency": {
-    "code": "128"
-  },
-  "stock": 73,
-  "author": {
-    "ID": "81240089-15b0-4266-980e-192a4c7b2349"
-  }
-}
-
-
-### Books
-# @name Books_DELETE
-DELETE {{server}}/cat/Books/16145390-2684-4fa4-9034-27e350c10e26
-Content-Type: application/json
-Authorization: Basic {{username}}:{{password}}
-
-
 ### Authors
 # @name Authors_GET
 GET {{server}}/cat/Authors
-Authorization: Basic {{username}}:{{password}}
-
-
-### Authors
-# @name Authors_POST
-POST {{server}}/cat/Authors
-Content-Type: application/json
-Authorization: Basic {{username}}:{{password}}
-
-{
-  "ID": "81240089-15b0-4266-980e-192a4c7b2349",
-  "name": "name-8124008",
-  "dateOfBirth": "2018-07-30",
-  "dateOfDeath": "2023-08-30",
-  "epoch": {
-    "ID": 24900545
-  },
-  "period": "period-8124008"
-}
-
-
-### Authors
-# @name Authors_PATCH
-PATCH {{server}}/cat/Authors/81240089-15b0-4266-980e-192a4c7b2349
-Content-Type: application/json
-Authorization: Basic {{username}}:{{password}}
-
-{
-  "ID": "81240089-15b0-4266-980e-192a4c7b2349",
-  "name": "name-8124008",
-  "dateOfBirth": "2018-07-30",
-  "dateOfDeath": "2023-08-30",
-  "epoch": {
-    "ID": 24900545
-  },
-  "period": "period-8124008"
-}
-
-
-### Authors
-# @name Authors_DELETE
-DELETE {{server}}/cat/Authors/81240089-15b0-4266-980e-192a4c7b2349
-Content-Type: application/json
 Authorization: Basic {{username}}:{{password}}
 
 
@@ -130,6 +34,6 @@ Content-Type: application/json
 Authorization: Basic {{username}}:{{password}}
 
 {
-  "book": "2",
-  "quantity": 1
+  "book": "4062307b-51fc-470c-83c8-e871966a435e",
+  "quantity": 29
 }
