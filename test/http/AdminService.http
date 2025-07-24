@@ -91,10 +91,9 @@ Content-Type: application/json
 Authorization: Basic {{username}}:{{password}}
 
 {
-  "ID": "28409932-64b6-42c2-b4f6-cccdba6fbb75",
   "name": "name-28409932",
   "dateOfBirth": "2015-12-04",
-  "dateOfDeath": "2011-08-01",
+  "dateOfDeath": "2017-08-01",
   "epoch": {
     "ID": 9690176
   },
@@ -107,13 +106,13 @@ Authorization: Basic {{username}}:{{password}}
 
 ### Authors
 # @name Authors_PATCH
-PATCH {{server}}/admin/Authors/28409932-64b6-42c2-b4f6-cccdba6fbb75
+PATCH {{server}}/admin/Authors/ae8ec880-5185-403e-a802-7078b2669154
 Content-Type: application/json
 Authorization: Basic {{username}}:{{password}}
 
 {
-  "ID": "28409932-64b6-42c2-b4f6-cccdba6fbb75",
-  "name": "name-28409932",
+  "ID": "ae8ec880-5185-403e-a802-7078b2669154",
+  "name": "migas",
   "dateOfBirth": "2015-12-04",
   "dateOfDeath": "2011-08-01",
   "epoch": {
