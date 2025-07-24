@@ -93,7 +93,7 @@ Authorization: Basic {{username}}:{{password}}
 {
   "name": "name-28409932",
   "dateOfBirth": "2015-12-04",
-  "dateOfDeath": "2017-08-01",
+  "dateOfDeath": "2013-08-01",
   "epoch": {
     "ID": 9690176
   },

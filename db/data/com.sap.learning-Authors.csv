@@ -1,1 +1,4 @@
 ID,name,dateOfBirth,dateOfDeath,epoch_ID,createdAt,createdBy,modifiedAt,modifiedBy
+1,"J.K. Rowling","1965-07-31",,"1",2023-01-01T00:00:00Z,"SYSTEM",2023-01-01T00:00:00Z,"SYSTEM"
+2,"George Orwell","1903-06-25","1950-01-21","2",2023-01-01T00:00:00Z,"SYSTEM",2023-01-01T00:00:00Z,"SYSTEM"
+3,"Gabriel Garcia Marquez","1927-03-06","2014-04-17","3",2023-01-01T00:00:00Z,"SYSTEM",2023-01-01T00:00:00Z,"SYSTEM"

@@ -37,11 +37,3 @@ entity Epochs : CodeList {
     key ID: Integer;
 }
 
-
-annotate Books with {
-    modifiedAt @odata.etag;
-};
-
-annotate Authors with {
-    modifiedAt @odata.etag;
-};
